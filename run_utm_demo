@@ -38,8 +38,8 @@ for i in `seq 1 4`;
 do
   # Delivery waypoint needs to know initial point for robot
   # Waypoint num corresponds to pioneer num (ref initial waypoints below)
-  let j=i-1
-  if ["$j" = "4" ]; then
+  let j=i
+  if [ "$j" = "4" ]; then
     let j=0
   fi
 
